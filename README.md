@@ -13,7 +13,7 @@ https://docs.docker.com/engine/install/linux-postinstall/
 uname -a
 
 
-##1.0 Running your first container
+## 1.0 Running your first container
 
 docker container run hello-world
 
@@ -26,7 +26,7 @@ docker image pull alpine
 docker image ls  OR  docker images
 
 
-## 1.1 Docker Container Run
+## 1.2 Docker Container Run
 
 
 docker container run alpine ls -l  OR  docker run alpine ls -l
@@ -44,7 +44,7 @@ docker ps   OR   docker container ls
 docker ps -a   OR docker container ls -a
 
 
-## 1.2 Container Isolation
+## 1.3 Container Isolation
 
 
 docker run -it alpine /bin/ash
@@ -56,13 +56,15 @@ docker run alpine ls    (hello.txt not present since this will be a new containe
 
 docker ps -a
 
-## Start a container
+## 1.4 Start a container
+
 docker container start <container ID>
   
 Now use the docker container ls command again to list the running containers.
 docker ps
 
 We can send a command in to the container to run by using the exec command, as follows:
+
 docker container exec <container ID> ls
   
 
