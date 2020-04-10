@@ -1,3 +1,5 @@
+# Level 1
+
 ## Docker Installation
 
 Install docker using apt
@@ -254,5 +256,9 @@ Our Hello image is a bit more interesting (your sha256 hashes will vary):
 
 
 We have three layers in our application. Recall that we had the base Alpine image (the FROM command in our Dockerfile), then we had a RUN command to install some packages, then we had a COPY command to add in our javascript code. Those are our layers! If you look closely, you can even see that both alpine and hello are using the same base layer, which we know because they have the same sha256 hash.
+
+
+# Level 2
+
 
 
